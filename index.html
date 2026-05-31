@@ -1,160 +1,361 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Anjali Patel Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.2rem;
+color:#cbd5e1;
+max-width:700px;
+margin:auto;
+}
+
+.highlight{
+color:#38bdf8;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 24px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+section{
+padding:90px 0;
+}
+
+.section-title{
+font-size:2.2rem;
+margin-bottom:30px;
+text-align:center;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+color:#cbd5e1;
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.skill-card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+}
+
+.skill-card h3{
+margin-bottom:15px;
+color:#38bdf8;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.project-card:hover{
+transform:translateY(-6px);
+}
+
+.project-card h3{
+margin-bottom:10px;
+}
+
+.project-card a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#94a3b8;
+}
+
+</style>
+</head>
+
 <body>
 
-<h1>Anjali Patel</h1>
+<section class="hero">
+<div>
+
+<h1>
+Hi, I'm <span class="highlight">Anjali Patel</span>
+</h1>
 
 <p>
-Aspiring Software Engineer | Data Science & AI Enthusiast | AWS Cloud Developer
+Software Engineer • AWS Cloud Developer • Data Science & AI Enthusiast
 </p>
 
-<p>
-📫 LinkedIn:
-<a href="https://www.linkedin.com/in/anjali-s-patel" target="_blank">
-linkedin.com/in/anjali-s-patel
+<a class="btn" href="https://github.com/anjalipatel101">
+View My GitHub
 </a>
-</p>
 
-<hr>
+</div>
+</section>
 
-<h2>About Me</h2>
+<section>
+<div class="container">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
 
 <p>
-Hi there, my name is Anjali Patel! 👋
+👋 Hi there! My name is Anjali Patel.
 </p>
 
-<ul>
-<li>
-🔭 I'm currently working on a Serverless Pizza Ordering Application on AWS and a personal mobile application project while actively learning Java, React.js, and Amazon Web Services.
-</li>
+<br>
 
-<li>
-💬 Ask me about my data science and AI experiences and perspectives!
-</li>
-</ul>
+<p>
+I'm currently building a Serverless Pizza Ordering Application on AWS and developing a personal mobile application while expanding my skills in Java, React.js, cloud computing, and software engineering.
+</p>
 
-<hr>
+<br>
 
-<h2>Tech Stack</h2>
+<p>
+Ask me about Data Science, Artificial Intelligence, Machine Learning, and AWS.
+</p>
 
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="section-title">Tech Stack</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
 <h3>Databases</h3>
-<ul>
-<li>Database Architecture</li>
-<li>Implementation & Setup</li>
-<li>SQL Queries</li>
-<li>Data Analytics</li>
-</ul>
+<p>
+Architecture, SQL, Analytics, Design, Implementation
+</p>
+</div>
 
+<div class="skill-card">
 <h3>Data Science</h3>
-<ul>
-<li>Large Dataset Analysis</li>
-<li>RStudio</li>
-<li>Python Scripting</li>
-<li>Predictive Modeling</li>
-<li>Reporting & Visualization</li>
-</ul>
-
-<h3>Artificial Intelligence & Machine Learning</h3>
-<ul>
-<li>Model Development & Evaluation</li>
-<li>Automation Solutions</li>
-<li>Business Applications of AI</li>
-<li>Machine Learning Concepts</li>
-</ul>
-
-<h3>Technologies</h3>
-<ul>
-<li>Amazon Web Services (AWS)</li>
-<li>Power BI</li>
-<li>Wix</li>
-</ul>
-
-<h3>Programming Languages</h3>
-<ul>
-<li>Python</li>
-<li>Java</li>
-<li>JavaScript</li>
-<li>React.js</li>
-<li>C++</li>
-<li>SQL</li>
-</ul>
-
-<hr>
-
-<h2>Featured Projects</h2>
-
-<h3>☁️ Amazon Web Services</h3>
-
 <p>
-Tech Stack: AWS, Railway, Full Lifecycle Development, Design & Deployment
+Python, RStudio, Predictions, Reporting, Large Datasets
+</p>
+</div>
+
+<div class="skill-card">
+<h3>AI / Machine Learning</h3>
+<p>
+Model Development, Automation, Business Applications
+</p>
+</div>
+
+<div class="skill-card">
+<h3>Cloud & Tools</h3>
+<p>
+AWS, Power BI, Wix, Railway
+</p>
+</div>
+
+<div class="skill-card">
+<h3>Programming</h3>
+<p>
+Python, Java, JavaScript, React.js, C++, SQL
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="section-title">Featured Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>🍕 Mike's Pizza Ordering App</h3>
+<p>
+Serverless AWS application built from concept to deployment.
 </p>
 
-<ul>
-<li>
-<a href="https://github.com/anjalipatel101/Mikes-Pizza-App1" target="_blank">
-Mike's Pizza Ordering App
+<br>
+
+<a href="https://github.com/anjalipatel101/Mikes-Pizza-App1">
+View Project →
 </a>
-</li>
+</div>
 
-<li>
-Virus Scanner Project (Ask me about it!)
-</li>
-</ul>
-
-<h3>🔧 Artificial Intelligence & Machine Learning</h3>
-
+<div class="project-card">
+<h3>🎬 Movie Recommender System</h3>
 <p>
-Tech Stack: Research, Design, Training, Testing & Evaluation of Machine Learning Models
+Machine learning recommendation engine with predictive analytics.
 </p>
 
-<ul>
-<li>
-<a href="https://github.com/anjalipatel101/CPSC483_Project" target="_blank">
-Movie Recommender System
+<br>
+
+<a href="https://github.com/anjalipatel101/CPSC483_Project">
+View Project →
 </a>
-</li>
+</div>
 
-<li>
-<a href="https://github.com/anjalipatel101/481_Project_Fall_2023" target="_blank">
-Animal Chatter
-</a>
-</li>
-</ul>
-
-<h3>📊 Data Science & Databases</h3>
-
+<div class="project-card">
+<h3>🐾 Animal Chatter</h3>
 <p>
-Tech Stack: Python, SQL, PHP, Database Design & Architecture
+AI and machine learning project focused on communication analysis.
 </p>
 
-<ul>
-<li>
-<a href="https://github.com/anjalipatel101/Summer_2023_Project" target="_blank">
-Pairs Trading Project
+<br>
+
+<a href="https://github.com/anjalipatel101/481_Project_Fall_2023">
+View Project →
 </a>
-</li>
+</div>
 
-<li>
-<a href="https://github.com/anjalipatel101/332FinalProject" target="_blank">
-Database Design Project
+<div class="project-card">
+<h3>📈 Pairs Trading Project</h3>
+<p>
+Data science project leveraging quantitative analysis and Python.
+</p>
+
+<br>
+
+<a href="https://github.com/anjalipatel101/Summer_2023_Project">
+View Project →
 </a>
-</li>
-</ul>
+</div>
 
-<hr>
+<div class="project-card">
+<h3>🗄 Database Design Project</h3>
+<p>
+Database architecture, SQL implementation, and backend design.
+</p>
 
-<h2>Let's Connect</h2>
+<br>
+
+<a href="https://github.com/anjalipatel101/332FinalProject">
+View Project →
+</a>
+</div>
+
+<div class="project-card">
+<h3>🦠 Virus Scanner Project</h3>
+<p>
+Security-focused project involving malware detection concepts and scanning workflows.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="section-title">Connect With Me</h2>
+
+<div class="contact">
 
 <p>
 LinkedIn:
-<a href="https://www.linkedin.com/in/anjali-s-patel" target="_blank">
+<a href="https://www.linkedin.com/in/anjali-s-patel">
 linkedin.com/in/anjali-s-patel
 </a>
 </p>
 
+<br>
+
 <p>
 GitHub:
-<a href="https://github.com/anjalipatel101" target="_blank">
+<a href="https://github.com/anjalipatel101">
 github.com/anjalipatel101
 </a>
 </p>
 
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Anjali Patel
+</footer>
+
 </body>
+</html>
+```
